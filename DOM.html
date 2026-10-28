@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="one">Hello</h1>
+    <button id="change">click to change</button>
+
+    <!-- <h1 class="two">Hiii</h1>
+    <h1 class="two">Hiii</h1>
+    <h1 class="two">Hiii</h1> -->
+    <script>
+        // let hello = document.getElementById("one")
+        // h1.style.color = "red"
+        // h1.innerText = "bye"
+        // let hii = document.getElementsByClassName("two")
+        // hii[0].style.color='red'
+        // for(let i of hii){
+        //     i.style.color="purple"
+        // }
+        // let v = document.querySelectorAll(".two");
+        // for(let i=0; i<v.length; i++){
+        //     v[i].style.color = "cyan";
+        // }
+        
+        //CHANGE BACKGROUND COLOR BY CLICK  
+        // let change = document.querySelector("#change");
+        // let body = document.querySelector("body");
+        // change.onclick = function(){
+        //     body.style.backgroundColor="black"
+        // }
+
+        let change = document.querySelector("#change");
+        let body = document.querySelector("body");
+        let a = true;
+        change.onclick=function(){
+            if(a){
+                body.style.backgroundColor="red";
+                a=false;
+            } else{
+                body.style.backgroundColor="green";
+                a=true;
+            }
+        }
+
+    </script>
+</body>
+</html>
